@@ -18,6 +18,6 @@ data "aws_ami" "joindevops" {
   }
 }
 data "aws_security_group" "allow-all" {
-  name = var.security_group_id
+ id = var.security_group_id
 }
 
