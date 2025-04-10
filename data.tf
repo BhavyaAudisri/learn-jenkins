@@ -17,7 +17,7 @@ data "aws_ami" "joindevops" {
     values = ["hvm"]
   }
 }
-data "aws_security_group" "allow_all" {
+data "aws_security_group" "allow-all" {
   name = var.security_group_id
 }
 
