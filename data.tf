@@ -1,4 +1,5 @@
 data "aws_ami" "joindevops" {
+
   most_recent = true
   owners      = ["973714476881"]
   filter {
@@ -19,3 +20,4 @@ data "aws_ami" "joindevops" {
 data "aws_security_group" "jenkins_sg" {
   name = var.security_group_id
 }
+
